@@ -1,9 +1,10 @@
 <?php
 
+//asociatyvus masyvas - leidzia perduoti per elementa tu duomenu elementus
 $products = [
-    'Products' => [
-        'IT' => [
-            'MackBook',
+    'Products' => [//1 for each
+        'IT' => [//2 for each
+            'MackBook',//3 for each
             'USB hub',
             'Keyboard'],
         'Other'=>[
@@ -27,13 +28,13 @@ $products = [
 
 <ul>
     <?php foreach ($products as $key => $value):?>
-        <li><?=$key;?>:<?=$value;?></li>
+        <li><?=$key;?>:</li>
     <ul>
         <?php foreach ($value as $item => $next):?>
-        <li><?=$item;?><?=$next;?></li>
+        <li><?=$item;?></li>
         <ul>
             <?php foreach ($next as $nextItem => $nextValue):?>
-                <li><?=$nextItem;?><?=$nextValue;?></li>
+                <li><?=$nextValue;?></li>
             <?php endforeach;?>
         </ul>
         <?php endforeach;?>
