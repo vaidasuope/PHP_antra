@@ -29,7 +29,7 @@ $products = [
 
 <ul>
     <?php foreach ($products as $key => $value):?>
-        <li><?=$key;?>:</li>
+        <li><strong><?=$key;?>:</strong></li>
     <ul>
         <?php foreach ($value as $item => $next):?>
         <li><?=$item;?></li>
