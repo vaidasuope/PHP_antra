@@ -23,7 +23,8 @@ $products = [
         ]
     ]
 ];
-
+//isvedam pirmiausia raktus, o reiksmes paduodam kitam ciklui - pirmas is kaires foreach yra masyvas, o kitas yra raktas ir reiksme
+//ucfirst - funckija diziosiom raidem isvesti
 ?>
 
 <ul>
@@ -33,7 +34,7 @@ $products = [
         <?php foreach ($value as $item => $next):?>
         <li><?=$item;?></li>
         <ul>
-            <?php foreach ($next as $nextItem => $nextValue):?>
+            <?php foreach ($next as $nextValue):?>
                 <li><?=$nextValue;?></li>
             <?php endforeach;?>
         </ul>
